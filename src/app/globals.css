@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+#maintag{
+  background:#292B32;
+  height: 100dvh;
+}
+#sportarea{
+  background:#292B32;
+}
+#collection{
+  background-color: #292B32;
+}
+.collectionbg{
+  background-color: #3d4048;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+#Whitemaintag{
+  background-color: whitesmoke;
+}
+#Lightcollection{
+  background-color: whitesmoke;
+}
+.Whitecollection{
+  background-color: rgba(232, 226, 226, 0.952);
+}
+#Whitesportdiv{
+  background-color: whitesmoke;
+}
+
+@media (min-width:820px)and (max-width:843px){
+  .Collectionbtnone{
+    position: relative;
+    left: 60px;
+    display: block;
+  }
+  .CollectionContainer{
+    position: relative;
+    right: 20px;
+  }
+  .Collectionbtntwo{
+    position: relative;
+    left: 425px;
+    bottom: 300px;
+    display:block;
+  }
+}
+@media (min-width:843px)and (max-width:1024px){
+  .Collectionbtnone{
+    position: relative;
+    left: 65px;
+    display: block;
+  }
+.Collectionbtntwo{
+  position: relative;
+  top: 0px;
+  left: 90px;
+  display: inline-block;
+
+}
+}
+@media (min-width:1024px)and (max-width:1300px){
+  .Collectionbtnone{
+    position: relative;
+    left: 25px;
+    display: block;
+  }
+.Collectionbtntwo{
+  position: relative;
+  top: 0px;
+  left: 130px;
+  display: inline-block;
+
+}
+}
